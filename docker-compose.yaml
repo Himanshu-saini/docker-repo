@@ -7,4 +7,9 @@ services:
             - "9042:9042"
             - "7000:7000"
         environment: 
-            - ./cassandra_env_variables.env
+            - CASSANDRA_CLUSTER_NAME='SaveAllWebCluster'
+            - CASSANDRA_BROADCAST_ADDRESS=127.0.0.1
+            - CASSANDRA_RPC_ADDRESS=127.0.0.1
+            - CASSANDRA_SEEDS="127.0.0.1"
+            - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+            - CASSANDRA_AUTO_BOOTSTRAP=false
