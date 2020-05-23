@@ -1,7 +1,7 @@
 version: "3"
 services:
     cassandra-node:
-        image:himanshu06/mycassandra
+        image: himanshu17/mycassandra:1.0
         ports:
             - "9042:9042"
             - "7000:7000"
