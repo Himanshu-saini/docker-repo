@@ -4,7 +4,6 @@ services:
         container_name: cassandra-node
         image: himanshu17/mycassandra:latest
         environment: 
-            - CASSANDRA_CLUSTER_NAME='SaveAllWebCluster'
             - CASSANDRA_BROADCAST_ADDRESS=127.0.0.1
             - JVM_EXTRA_OPTS=-Dcassandra.config=/tmp/cassandra/cassandra.yaml
         ports:
