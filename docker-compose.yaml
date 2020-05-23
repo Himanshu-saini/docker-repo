@@ -1,14 +1,9 @@
 version: "3"
 services:
     cassandra-node:
-<<<<<<< HEAD
-        container_name: cassandra-node 
-        image: himanshu17/mycassandra:1.0
-        ports: 
-=======
+        container_name: cassandra-node
         image: himanshu17/mycassandra:1.0
         ports:
->>>>>>> 6f07f604f3dc9d5b2c18b33e36014778d1453c3d
             - "9042:9042"
             - "7000:7000"
         environment: 
