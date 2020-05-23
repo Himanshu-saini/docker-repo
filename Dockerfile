@@ -9,5 +9,5 @@ RUN echo "Installation Done"
 
 RUN service cassandra stop
 COPY ./cassandra.yaml /etc/cassandra/
-RUN rm -r /var/lib/cassandra/data/ && service cassandra start
+RUN service cassandra start
 
