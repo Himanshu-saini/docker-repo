@@ -3,10 +3,10 @@ services:
     cassandra-node:
         container_name: cassandra-node
         image: himanshu17/mycassandra:latest
-        ports:
-            - "9042:9042"
-            - "7000:7000"
         environment: 
             - CASSANDRA_CLUSTER_NAME='SaveAllWebCluster'
             - CASSANDRA_BROADCAST_ADDRESS=127.0.0.1
-        restart: always
+            - JVM_EXTRA_OPTS=-Dcassandra.config=/tmp/cassandra/cassandra.yaml
+        ports:
+            - "9042:9042"
+            - "7000:7000"
