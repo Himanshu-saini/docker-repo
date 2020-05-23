@@ -8,6 +8,3 @@ services:
             - "7000:7000"
         environment: 
             - CASSANDRA_BROADCAST_ADDRESS=127.0.0.1
-            - CASSANDRA_RPC_ADDRESS=127.0.0.1
-            - CASSANDRA_SEEDS="127.0.0.1"
-            - CASSANDRA_AUTO_BOOTSTRAP=false
