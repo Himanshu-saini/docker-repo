@@ -2,7 +2,7 @@ version: "3"
 services:
     cassandra-node:
         container_name: cassandra-node
-        image: himanshu17/mycassandra:letest
+        image: himanshu17/mycassandra:latest
         ports:
             - "9042:9042"
             - "7000:7000"
