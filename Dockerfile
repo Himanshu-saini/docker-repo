@@ -7,7 +7,7 @@ RUN curl https://downloads.apache.org/cassandra/KEYS | apt-key add -
 RUN apt-get update && apt-get install cassandra -y
 RUN echo "Installation Done"
 
-RUN servie cassandra stop
+RUN service cassandra stop
 COPY ./cassandra.yaml /etc/cassandra/
 RUN rm -r /var/lib/cassandra/data/ && service cassandra start
 
