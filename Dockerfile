@@ -1,6 +1,6 @@
-FROM CASSANDRA
+FROM cassandra
 
-RUM echo "Docker image started"
+RUN echo "Docker image started"
 RUN apt-get update
 
 COPY ./cassandra.yaml /etc/cassandra/

@@ -1,9 +1,10 @@
 version: "3"
 services:
     cassandra-node:
-        image:himanshu06/mycassandra
-        ports:
+        container_name: cassandra-node 
+        image: himanshu17/mycassandra:1.0
+        ports: 
             - "9042:9042"
             - "7000:7000"
-        environment:
+        environment: 
             - ./cassandra_env_variables.env
