@@ -1,0 +1,9 @@
+version: "3"
+services:
+    cassandra-node:
+        image:himanshu06/mycassandra
+        ports:
+            - "9042:9042"
+            - "7000:7000"
+        environment:
+            - ./cassandra_env_variables.env
